@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #ececec;
+  padding: 1rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  color: rgb(14, 14, 14);
+}
+.navLinks {
+  display: flex;
+  gap: 4rem;
+  font-weight: 400;
+}
+
+.navLinks a {
+  color: rgb(15, 14, 14);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
