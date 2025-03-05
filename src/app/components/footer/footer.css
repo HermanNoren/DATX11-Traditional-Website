@@ -29,33 +29,43 @@
   margin-left: 2rem;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background: #ececec;
-  padding: 20px;
-  text-align: center;
-}
-
 .footer-info {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start; 
-  padding: 20px;
-  background: #fff;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  width: 100%;
   align-items: center;
+  padding: 20px; 
+  background: #fff;
+  width: 100%;
+  position: flex; 
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  background: #ececec;
+  padding: 0; 
+  text-align: center;
+  width: 100%;
 }
 
 .info-column {
   text-align: center;
   max-width: 100%;
+}
+
+.products-column {
+  text-align: center;
+  max-width: 100%;
+  flex: 1;
+}
+
+.contact-column {
+  text-align: left;
+  max-width: 100%;
+  flex: 1;
 }
 
 .footer-button {

@@ -12,7 +12,9 @@ function Footer() {
         </div>
         <div className="info-column">
           <p>About deCube</p>
-          <button className="footer-button">About Us</button>
+          <Link href="/aboutpage">
+            <button className="footer-button">About Us</button>
+          </Link>
         </div>
         <div className="info-column">
           <p>Contact us</p>
