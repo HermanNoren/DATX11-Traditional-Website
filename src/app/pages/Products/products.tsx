@@ -34,7 +34,7 @@ const ProductPage: React.FC = () => {
               <strong>Dimensions:</strong> 10x10x10 cm
             </p>
             <p className="price">
-              <strong>Price:</strong>&nbsp;&nbsp;$199
+              <strong>Price:</strong>&nbsp;&nbsp;4999 SEK
             </p>
             <button className="buy-button">
               Add to Cart
@@ -57,7 +57,7 @@ const ProductPage: React.FC = () => {
               <strong>Dimensions:</strong> 20x20x20cm
             </p>
             <p className="price">
-              <strong>Price:</strong>&nbsp;&nbsp;$199
+              <strong>Price:</strong>&nbsp;&nbsp;7999 SEK
             </p>
             <button className="buy-button">
               Add to Cart
@@ -80,7 +80,7 @@ const ProductPage: React.FC = () => {
               <strong>Dimensions:</strong> 30x30x30cm
             </p>
             <p className="price">
-              <strong>Price:</strong>&nbsp;&nbsp;$299
+              <strong>Price:</strong>&nbsp;&nbsp;9999 SEK
             </p>
             <button className="buy-button">
               Add to Cart
