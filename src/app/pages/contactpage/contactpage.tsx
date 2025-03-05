@@ -13,7 +13,7 @@ function Contactpage() {
             className="transparent-image"
           />
           <div className="deCube">
-            <p className="text">
+           
                <div className="square">
                <h2 className="title">- deCube HQ -</h2>
                <h3 className="subtitle">contact & location</h3>
@@ -22,7 +22,7 @@ function Contactpage() {
                     <span className="bold">Adress:</span><br></br> decube street<br></br> Gothenburg Sweden<br></br>
                     <span className="bold">Socials:</span>
                 </div>
-            </p>
+            
           </div>
           
           <img

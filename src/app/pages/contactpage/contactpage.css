@@ -57,14 +57,13 @@
 .HQimage {
     width: 400px;
     height: auto;
-    margin-top: -50px; /* Adjust margin if needed */
-    margin-right: 50;
+    margin-top: -400px; /* Adjust margin if needed */
 }
 
 .square {
     position: absolute; /* Position the square in front of the background images */
     top: 80%; /* Centers the square vertically */
-    left: 30%; /* Centers the square horizontally */
+    left: 20%; /* Centers the square horizontally */
     transform: translate(-50%, -50%); /* Ensures exact centering */
     width: 350px; /* Width of the square */
     height: 350px; /* Height of the square */
