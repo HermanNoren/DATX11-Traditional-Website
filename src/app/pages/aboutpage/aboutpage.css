@@ -19,6 +19,18 @@
   text-align: center;
 }
 
+.about-title {
+  font-size: 3rem;
+  color: rgb(40, 40, 40);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+.aboutContainer {
+  box-shadow: 0 4px 8px black;
+  margin-top: 30px;
+}
+
 .subtitle {
   font-size: 2rem;
   color: rgb(40, 40, 40);
@@ -30,6 +42,12 @@
   color: rgb(40, 40, 40);
   font-weight: 100;
   writing-mode: vertical-rl;
+  width: 80px;
+  height: 50px;
+  text-orientation: sideways;
+  white-space: nowrap;
+  margin-left: 18rem;
+  margin-top: 16rem;
 }
 
 .containerSubtitleInternalShapes {
@@ -40,11 +58,14 @@
   font-size: 1.5rem;
   color: rgb(40, 40, 40);
   font-weight: 600;
+  margin-top: 0.7rem;
 }
 
 .sections {
   width: 100%;
-  height: 30rem;
+  height: 32rem;
+  display: flex;
+  align-items: center;
 }
 .sectionInternalShapes {
   width: 100%;
@@ -55,57 +76,33 @@
 
 .deCube {
   width: 500px;
-  margin-top: 5rem;
-  margin-left: 10px;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 10rem;
   height: 20rem;
   text-align: center;
+  flex: 1;
 }
 
 .internal-shapes {
-  width: 500;
-  height: 25rem;
-  margin-top: 5rem;
-  margin-left: 30rem;
+  width: 800;
+  height: auto;
+  margin-top: 4rem;
+  margin-left: 2%;
   text-align: center;
 }
 
 .astrolight {
-  width: 700px;
-  margin-top: 5rem;
-  margin-left: 10px;
+  width: 900px;
+  margin-top: 3rem;
+  margin-left: 5rem;
   height: 20rem;
   text-align: center;
-}
-
-.deC {
-  font-size: 4rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: rgb(236, 234, 234);
-}
-
-.ube {
-  font-size: 4rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: rgb(99, 97, 97);
-}
-
-.slogan1 {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: rgb(236, 234, 234);
-  margin-top: 1rem;
-}
-.slogan2 {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: rgb(99, 97, 97);
-  margin-top: 1rem;
+  flex: 1;
 }
 
 .buy-button {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
   font-weight: bold;
@@ -121,7 +118,23 @@
   background-color: rgb(50, 50, 50);
 }
 
-.side-image {
-  max-width: 100%; /* Makes sure image doesn’t overflow */
+.astrolight-image {
+  width: 35rem;
   height: auto;
+  margin-left: 8rem;
+  margin-top: 10px;
+}
+
+.chair-image {
+  width: auto;
+  height: auto;
+  margin-left: 0rem;
+  margin-top: 10px;
+}
+
+.doube-image {
+  width: 470px;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 15rem;
 }
