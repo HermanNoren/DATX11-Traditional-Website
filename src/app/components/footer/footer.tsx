@@ -21,9 +21,9 @@ function Footer() {
           <button className="footer-button">Contact</button>
         </div>
       </div>
-      
+
       <nav className="footer">
-        <text className="copyright"> © deCube</text>
+        <p className="copyright"> © deCube</p>
         <div className="logo">
           <Link href="/" className="logo">
             <Boxes strokeWidth={1} className="logo-icon" />
@@ -46,4 +46,3 @@ function Footer() {
 }
 
 export default Footer;
-
