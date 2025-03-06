@@ -62,15 +62,60 @@
 
 .square {
     position: absolute; /* Position the square in front of the background images */
-    top: 80%; /* Centers the square vertically */
-    left: 20%; /* Centers the square horizontally */
+    top: 90%; /* Centers the square vertically */
+    left: 30%; /* Centers the square horizontally */
     transform: translate(-50%, -50%); /* Ensures exact centering */
     width: 350px; /* Width of the square */
     height: 350px; /* Height of the square */
     background-color: #D9D9D9; /* Semi-transparent square color */
-    color: #172A45; /* Text color */
-    
+    color: rgb(40, 40, 40); /* Text color */
+
     font-size: 16px; /* Text size */
     text-align: center; /* Text alignment */
     border-radius: 10px; /* Optional: Rounded corners */
-  }
+
+    display: flex;  /* Enables flexbox */
+    flex-direction: column;  /* Stacks content vertically */
+    justify-content: center;  /* Centers text vertically */
+    align-items: center;  /* Centers text horizontally */
+}
+
+.title {
+    text-align: center; /* Centers the text */
+    position: absolute; /* Positions it separately from the square */
+    top: 55%; /* Adjust this value to move it above the square */
+    left: 30%; /* Align with the square */
+    transform: translate(-50%, -50%); /* Ensures centering */
+    width: 350px; /* Same width as the square */
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+.subtitle {
+    text-align: center; /* Centers the text */
+    position: absolute; /* Positions it separately from the square */
+    top: 60%; /* Adjust this value to move it above the square */
+    left: 30%; /* Align with the square */
+    transform: translate(-50%, -50%); /* Ensures centering */
+    width: 350px; /* Same width as the square */
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: rgb(40, 40, 40);
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 5px; /* Reduce space between each section */
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    display: block; /* Ensures the label appears above the text */
+}
+
+.text {
+    display: block; /* Ensures the text appears immediately below the label */
+    margin-top: 2px; /* Slight spacing */
+}

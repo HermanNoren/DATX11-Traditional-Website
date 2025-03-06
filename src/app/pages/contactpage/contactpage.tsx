@@ -12,17 +12,18 @@ function Contactpage() {
             src="/TransparentCube.png"
             className="transparent-image"
           />
+
           <div className="deCube">
-           
-               <div className="square">
-               <h2 className="title">- deCube HQ -</h2>
-               <h3 className="subtitle">contact & location</h3>
-                    <span className="bold">Phone:</span><br></br> +46 123 456 789 <br></br>
-                    <span className="bold">Email:</span><br></br> deCube@deCube.com <br></br>
-                    <span className="bold">Adress:</span><br></br> decube street<br></br> Gothenburg Sweden<br></br>
-                    <span className="bold">Socials:</span>
+            <h2 className="title">- deCube HQ -</h2>
+            <h3 className="subtitle">contact & location</h3>
+            <div className="square">
+                <div className="info">
+                    <div><span className="bold">Phone:</span> <span className="text">+46 123 456 789</span></div>
+                    <div><span className="bold">Email:</span> <span className="text">deCube@deCube.com</span></div>
+                    <div><span className="bold">Address:</span> <span className="text">decube street, Gothenburg Sweden</span></div>
+                    <div><span className="bold">Socials:</span> <span className="text"></span></div>
                 </div>
-            
+            </div>
           </div>
           
           <img
