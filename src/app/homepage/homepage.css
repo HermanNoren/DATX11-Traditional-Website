@@ -96,7 +96,7 @@
   flex: 1;
 }
 
-.buy-button {
+.homepage-buy-button {
   margin-top: 1rem;
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
@@ -109,7 +109,7 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.buy-button:hover {
+.homepage-buy-button:hover {
   background: #6f472a;
 }
 

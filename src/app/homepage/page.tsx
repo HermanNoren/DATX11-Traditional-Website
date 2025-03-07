@@ -9,7 +9,7 @@ function Homepage() {
             <span className="deC">deC</span>
             <span className="ube">ube</span>
           </h1>
-          <button className="buy-button">Buy now</button>
+          <button className="homepage-buy-button">Buy now</button>
           <h2>
             <span className="slogan1">"Because everything i</span>
             <span className="slogan2">s better in cube form"</span>
@@ -28,7 +28,7 @@ function Homepage() {
               In a market where the exceptional is never ordinary, deCube sets
               the standard.
             </p>
-            <button className="buy-button">Products</button>
+            <button className="homepage-buy-button">Products</button>
           </div>
         </div>
         <div className="sections">

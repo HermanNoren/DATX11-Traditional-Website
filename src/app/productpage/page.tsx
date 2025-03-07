@@ -5,8 +5,8 @@ const ProductPage: React.FC = () => {
   return (
     <div className="product-page">
       <div className="header"></div>
-      <h1 className="about-title">- Products -</h1>
-      <p className="text">
+      <h1 className="products-title">- Products -</h1>
+      <p className="product-text">
         Experience deCube — a revolutionary decorating cube crafted from
         Astrolite, an exclusive <br />
         material from the depths of space. With its sleek, modern aesthetic and
@@ -37,7 +37,7 @@ const ProductPage: React.FC = () => {
             <p className="price">
               <strong>Price:</strong>&nbsp;&nbsp;4999 SEK
             </p>
-            <button className="buy-button">Add to Cart</button>
+            <button className="product-button">Add to Cart</button>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ const ProductPage: React.FC = () => {
             <p className="price">
               <strong>Price:</strong>&nbsp;&nbsp;7999 SEK
             </p>
-            <button className="buy-button">Add to Cart</button>
+            <button className="product-button">Add to Cart</button>
           </div>
         </div>
 
@@ -91,7 +91,7 @@ const ProductPage: React.FC = () => {
             <p className="price">
               <strong>Price:</strong>&nbsp;&nbsp;9999 SEK
             </p>
-            <button className="buy-button">Add to Cart</button>
+            <button className="product-button">Add to Cart</button>
           </div>
         </div>
       </div>
