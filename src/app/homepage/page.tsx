@@ -28,7 +28,7 @@ function Homepage() {
               In a market where the exceptional is never ordinary, deCube sets
               the standard.
             </p>
-            <button className="buy-button">Buy now</button>
+            <button className="buy-button">Products</button>
           </div>
         </div>
         <div className="sections">
