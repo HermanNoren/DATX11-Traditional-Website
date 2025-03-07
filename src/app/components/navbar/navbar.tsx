@@ -12,6 +12,13 @@ function Navbar() {
         <Link href="/productpage">Products</Link>
         <Link href="/aboutpage">About Us</Link>
         <Link href="#">Contacts</Link>
+        <Link href="/checkoutpage" className="cart-link">
+          <img 
+            src="/shopping-cart.png" 
+            alt="Cart" 
+            className="cart-icon" 
+          />
+        </Link>
       </div>
     </nav>
   );

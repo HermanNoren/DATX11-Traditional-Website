@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
+import Link from "next/link";
+import { useCart } from '../components/cartlogic';
 import "./checkout.css";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import ProductCard from "../components/ProductCard/ProductCard";
 
 interface Product {
   id: string;
@@ -45,27 +47,18 @@ const formatPrice = (price: number) => {
 };
 
 const CheckoutPage: React.FC = () => {
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
-
-  const addToCart = (product: Product) => {
-    if (!cartItems.find(item => item.id === product.id)) 
-      { setCartItems([...cartItems, { ...product, quantity: 1 }]);}};
-
-  const removeFromCart = (productId: string) => {
-    setCartItems(cartItems.filter(item => item.id !== productId));};
-
-  const updateQuantity = (productId: string, quantity: number) => {
-    setCartItems(cartItems.map(item => item.id === productId ? { ...item, quantity } : item));};
-
+  const { cartItems, addItem: addToCart, removeItem: removeFromCart, Quantity: updateQuantity } = useCart();
   const totalPrice = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
   return (
     <div className="checkout-page">
       <div className="checkout-navbar">
-        <div className="back-arrow">
+        <Link href="/productpage" className="back-arrow">
           <img src="/back-arrow.png" alt="Back" className="back-icon" />
-        </div>
-        <h2 className="top-text">deCude Shopping Bag</h2>
+        </Link>
+        <Link href="/homepage" className="top-text-link">
+          <h2 className="top-text">deCube Shopping Bag</h2>
+        </Link>
         <div className="cart-icon-wrapper">
           <img src="/shopping-cart.png" alt="Shopping Cart" className="cart-icon" />
         </div>
@@ -107,7 +100,9 @@ const CheckoutPage: React.FC = () => {
         </div>
         <div className="margin"></div>
         <div className="checkout-footer">
+        <Link href="/confirmationpage">
           <button className="checkout-button">CHECKOUT</button>
+        </Link>
           <p className="bottom-text">
             DISCLAIMER: this isn't a real checkout. pressing the 
             <br />button brings you to the end of the site 

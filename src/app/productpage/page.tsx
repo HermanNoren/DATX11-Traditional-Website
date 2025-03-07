@@ -1,7 +1,44 @@
+"use client";
+
 import React from "react";
+import { useCart } from '../components/cartlogic';
 import "./products.css";
 
+interface Product {
+  id: string;
+  name: string;
+  price: number;
+  dimensions: string;
+  image: string;
+}
+
+const PRODUCTS: Product[] = [
+  {
+    id: 'petite',
+    name: 'PETITE',
+    price: 4999,
+    dimensions: '10x10x10 cm',
+    image: '/petit.png'
+  },
+  {
+    id: 'regal',
+    name: 'REGAL',
+    price: 7999,
+    dimensions: '20x20x20cm',
+    image: '/regal.png'
+  },
+  {
+    id: 'imperial',
+    name: 'IMPERIAL',
+    price: 9999,
+    dimensions: '30x30x30cm',
+    image: '/imperial.png'
+  }
+];
+
 const ProductPage: React.FC = () => {
+  const { cartItems, addItem} = useCart();
+
   return (
     <div className="product-page">
       <div className="header"></div>
@@ -37,7 +74,13 @@ const ProductPage: React.FC = () => {
             <p className="price">
               <strong>Price:</strong>&nbsp;&nbsp;4999 SEK
             </p>
-            <button className="product-button">Add to Cart</button>
+            <button 
+              className="product-button"
+              onClick={() => addItem(PRODUCTS.find(p => p.id === 'petite')!)}
+              disabled={cartItems.some(item => item.id === 'petite')}
+            >
+              Add PETITE
+            </button>
           </div>
         </div>
 
@@ -63,7 +106,13 @@ const ProductPage: React.FC = () => {
             <p className="price">
               <strong>Price:</strong>&nbsp;&nbsp;7999 SEK
             </p>
-            <button className="product-button">Add to Cart</button>
+            <button 
+              className="product-button"
+              onClick={() => addItem(PRODUCTS.find(p => p.id === 'regal')!)}
+              disabled={cartItems.some(item => item.id === 'regal')}
+            >
+              Add REGAL
+            </button>
           </div>
         </div>
 
@@ -91,7 +140,13 @@ const ProductPage: React.FC = () => {
             <p className="price">
               <strong>Price:</strong>&nbsp;&nbsp;9999 SEK
             </p>
-            <button className="product-button">Add to Cart</button>
+            <button 
+              className="product-button"
+              onClick={() => addItem(PRODUCTS.find(p => p.id === 'imperial')!)}
+              disabled={cartItems.some(item => item.id === 'imperial')}
+            >
+              Add IMPERIAL
+            </button>
           </div>
         </div>
       </div>

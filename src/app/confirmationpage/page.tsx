@@ -1,13 +1,18 @@
 import "./confirmation.css";
+import Link from "next/link";
 
 const ConfirmationPage: React.FC = () => {
   return (
     <div className="confirmation-page">
       <div className="checkout-navbar">
-        <div className="back-arrow">
+        <Link href="/checkoutpage">
+          <div className="back-arrow">
           <img src="/back-arrow.png" alt="Back" className="back-icon" />
         </div>
+        </Link>
+        <Link href="/homepage">
         <h2 className="top-text">deCude</h2>
+        </Link>
       </div>
       <div className="body">
         <img src="/confirmation-cube.png" alt="Confirmation Cube" className="confirmation-cube" />
@@ -18,9 +23,9 @@ const ConfirmationPage: React.FC = () => {
         </div>
       </div>
       <div className="button-wrapper">
-              <button className="button">
-                deCube.com
-              </button>
+        <Link href="/homepage">
+          <button className="button">deCube.com</button>
+        </Link>
       </div>
     </div>
   );

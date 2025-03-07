@@ -52,12 +52,13 @@ body {
 
 .add-buttons button {
   padding: 8px 16px;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   cursor: pointer;
+  color: white;
 }
 
 .add-buttons button:disabled {
-  background-color: #838383;
+  background-color: #ffffff;
   cursor: not-allowed;
 }
 

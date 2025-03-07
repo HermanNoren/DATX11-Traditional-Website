@@ -35,3 +35,14 @@
 .navLinks a:hover {
   text-decoration: underline;
 }
+
+.cart-icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+}
