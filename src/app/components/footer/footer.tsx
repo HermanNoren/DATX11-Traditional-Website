@@ -20,7 +20,9 @@ function Footer() {
         </div>
         <div className="info-column">
           <p>Contact us</p>
-          <button className="footer-button">Contact</button>
+          <Link href="/contactpage">
+            <button className="footer-button">Contact</button>
+          </Link>
         </div>
       </div>
 
