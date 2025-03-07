@@ -7,7 +7,7 @@ const ProductPage: React.FC = () => {
       <div className="header"></div>
       <h1 className="about-title">- Products -</h1>
       <p className="text">
-        Experience deCube—a revolutionary decorating cube crafted from
+        Experience deCube — a revolutionary decorating cube crafted from
         Astrolite, an exclusive <br />
         material from the depths of space. With its sleek, modern aesthetic and
         cutting-edge <br />
