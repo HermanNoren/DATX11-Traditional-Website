@@ -9,7 +9,7 @@ function Navbar() {
         <Boxes strokeWidth={1} className="logo-icon" />
       </Link>
       <div className={"navLinks"}>
-        <Link href="#">Products</Link>
+        <Link href="/productpage">Products</Link>
         <Link href="/aboutpage">About Us</Link>
         <Link href="#">Contacts</Link>
       </div>
