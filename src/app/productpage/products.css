@@ -6,6 +6,13 @@ body {
   color: #333;
   background-color: #fdfdfd;
 }
+.product-page {
+  background-color: rgb(255, 252, 249);
+}
+
+.margin {
+  background-color: rgb(255, 252, 249);
+}
 
 .header {
   width: 100%;
@@ -14,11 +21,13 @@ body {
 }
 
 .about-title {
-  font-size: 80px;
+  font-size: 3rem;
+  height: 100px;
   color: rgb(40, 40, 40);
   font-weight: 500;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 4px rgb(162, 162, 162);
 }
 
 .text {
@@ -62,7 +71,7 @@ body {
 }
 
 .product-image {
-  margin-top: 10px; ;
+  margin-top: 10px;
   margin-left: 10px;
   width: 300px;
   height: auto;
@@ -80,6 +89,7 @@ body {
   margin: 0;
   font-size: 27px;
   font-weight: normal;
+  color: #333;
 }
 
 .description {

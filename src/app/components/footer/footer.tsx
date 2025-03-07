@@ -8,7 +8,9 @@ function Footer() {
       <div className="footer-info">
         <div className="info-column">
           <p>View products</p>
-          <button className="footer-button">Products</button>
+          <Link href="/productpage">
+            <button className="footer-button">Products</button>
+          </Link>
         </div>
         <div className="info-column">
           <p>About deCube</p>
