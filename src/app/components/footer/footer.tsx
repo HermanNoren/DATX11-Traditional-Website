@@ -8,7 +8,9 @@ function Footer() {
       <div className="footer-info">
         <div className="info-column">
           <p>View products</p>
-          <button className="footer-button">Products</button>
+          <Link href="/productpage">
+            <button className="footer-button">Products</button>
+          </Link>
         </div>
         <div className="info-column">
           <p>About deCube</p>
@@ -21,9 +23,9 @@ function Footer() {
           <button className="footer-button">Contact</button>
         </div>
       </div>
-      
+
       <nav className="footer">
-        <text className="copyright"> © deCube</text>
+        <p className="copyright"> © deCube</p>
         <div className="logo">
           <Link href="/" className="logo">
             <Boxes strokeWidth={1} className="logo-icon" />
@@ -46,4 +48,3 @@ function Footer() {
 }
 
 export default Footer;
-
