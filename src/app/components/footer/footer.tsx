@@ -28,11 +28,12 @@ function Footer() {
 
       <nav className="footer">
         <p className="copyright"> © deCube</p>
-        <div className="logo">
-          <Link href="/" className="logo">
+        <div className="decube-logo">
+          <Link href="/homepage" className="logo">
             <Boxes strokeWidth={1} className="logo-icon" />
           </Link>
         </div>
+        ´
         <div className="footerLinks">
           <Link href="#" className="facebook">
             <Facebook strokeWidth={1} className="logo-facebook" />

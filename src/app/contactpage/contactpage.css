@@ -81,7 +81,8 @@
   transform: translate(-50%, -50%); /* Ensures centering */
   width: 350px; /* Same width as the square */
   font-size: 2rem; /* Adjust size as needed */
-  font-weight: bold;
+  font-weight: normal;
+  color: black;
 }
 
 .contact-subtitle {
