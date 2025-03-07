@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Navbar from "./components/navbar/navbar";
-import Homepage from "./pages/homepage/homepage";
+import Homepage from "./homepage/page";
 import Footer from "./components/footer/footer";
-import Aboutpage from "./pages/aboutpage/aboutpage";
+import Aboutpage from "./aboutpage/page";
 
 export default function Home() {
   return (

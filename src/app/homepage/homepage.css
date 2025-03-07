@@ -29,13 +29,11 @@
   font-size: 1.5rem;
   font-style: italic;
   color: rgb(236, 234, 234);
-  margin-top: 1rem;
 }
 .slogan2 {
   font-size: 1.5rem;
   font-style: italic;
   color: rgb(99, 97, 97);
-  margin-top: 1rem;
 }
 
 .title {
@@ -99,7 +97,7 @@
 }
 
 .buy-button {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
   font-weight: bold;
