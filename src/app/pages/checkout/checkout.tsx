@@ -1,0 +1,121 @@
+"use client";
+
+import React, { useState } from "react";
+import "./checkout.css";
+import ProductCard from "../../components/ProductCard/ProductCard";
+
+interface Product {
+  id: string;
+  name: string;
+  price: number;
+  dimensions: string;
+  image: string;
+}
+
+interface CartItem extends Product {
+  quantity: number;
+}
+
+const PRODUCTS: Product[] = [
+  {
+    id: 'petite',
+    name: 'PETITE',
+    price: 4999,
+    dimensions: '10x10x10 cm',
+    image: '/petit.png'
+  },
+  {
+    id: 'regal',
+    name: 'REGAL',
+    price: 7999,
+    dimensions: '20x20x20cm',
+    image: '/regal.png'
+  },
+  {
+    id: 'imperial',
+    name: 'IMPERIAL',
+    price: 9999,
+    dimensions: '30x30x30cm',
+    image: '/imperial.png'
+  }
+];
+
+const formatPrice = (price: number) => {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+};
+
+const CheckoutPage: React.FC = () => {
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+
+  const addToCart = (product: Product) => {
+    if (!cartItems.find(item => item.id === product.id)) 
+      { setCartItems([...cartItems, { ...product, quantity: 1 }]);}};
+
+  const removeFromCart = (productId: string) => {
+    setCartItems(cartItems.filter(item => item.id !== productId));};
+
+  const updateQuantity = (productId: string, quantity: number) => {
+    setCartItems(cartItems.map(item => item.id === productId ? { ...item, quantity } : item));};
+
+  const totalPrice = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+  return (
+    <div className="checkout-page">
+      <div className="checkout-navbar">
+        <div className="back-arrow">
+          <img src="/back-arrow.png" alt="Back" className="back-icon" />
+        </div>
+        <h2 className="top-text">deCude Shopping Bag</h2>
+        <div className="cart-icon-wrapper">
+          <img src="/shopping-cart.png" alt="Shopping Cart" className="cart-icon" />
+        </div>
+      </div>
+      <div className="shopping-cart">
+        <div className="checkout-header">
+          <h2 className="bag">
+            Bag total: {formatPrice(totalPrice)} SEK
+          </h2>
+          <div className="add-buttons">
+            {PRODUCTS.map(product => (
+              <button 
+                key={product.id}
+                onClick={() => addToCart(product)}
+                disabled={cartItems.some(item => item.id === product.id)}
+              >
+                Add {product.name}
+              </button>
+            ))}
+          </div>
+        </div>
+        <p className="text">
+          Worldwide shipping and no returns.
+        </p>
+        <div className="line"></div>
+        <div className="product-grid">
+          {cartItems.map(item => (
+            <ProductCard
+              key={item.id}
+              name={item.name}
+              price={item.price * item.quantity}
+              dimensions={item.dimensions}
+              image={item.image}
+              quantity={item.quantity}
+              onRemove={() => removeFromCart(item.id)}
+              onQuantityChange={(quantity) => updateQuantity(item.id, quantity)}
+            />
+          ))}
+        </div>
+        <div className="margin"></div>
+        <div className="checkout-footer">
+          <button className="checkout-button">CHECKOUT</button>
+          <p className="bottom-text">
+            DISCLAIMER: this isn't a real checkout. pressing the 
+            <br />button brings you to the end of the site 
+          </p>
+        </div>
+      </div>
+    </div>  
+  );
+};
+
+export default CheckoutPage;
