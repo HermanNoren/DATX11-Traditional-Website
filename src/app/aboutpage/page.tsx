@@ -1,4 +1,5 @@
 import "./aboutpage.css";
+import Link from "next/link";
 
 function Aboutpage() {
   return (
@@ -37,7 +38,9 @@ function Aboutpage() {
               We offer worldwide shipping, with no returns, reflecting the
               uncompromising quality and rarity of our product.
             </p>
-            <button className="buy-button">Buy now</button>
+            <Link href="/productpage">
+              <button className="buy-button">Buy now</button>
+            </Link>
           </div>
           <div className="containerSubtitleInternalShapes">
             <p className="subtitleInternalShapes">
