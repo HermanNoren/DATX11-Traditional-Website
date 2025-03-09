@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./navbar.css";
-import { Boxes } from "lucide-react";
+import { Boxes, ShoppingCart } from "lucide-react";
 
 function Navbar() {
   return (
@@ -12,6 +12,9 @@ function Navbar() {
         <Link href="/productpage">Products</Link>
         <Link href="/aboutpage">About Us</Link>
         <Link href="/contactpage">Contact</Link>
+        <Link href="/cartpage" className="cart-logo">
+          <ShoppingCart strokeWidth={2} className="cart-logo-icon" />
+        </Link>
       </div>
     </nav>
   );

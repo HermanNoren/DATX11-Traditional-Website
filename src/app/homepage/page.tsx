@@ -1,4 +1,5 @@
 import "./homepage.css";
+import Link from "next/link";
 
 function Homepage() {
   return (
@@ -9,7 +10,10 @@ function Homepage() {
             <span className="deC">deC</span>
             <span className="ube">ube</span>
           </h1>
-          <button className="homepage-buy-button">Buy now</button>
+          <Link href="/productpage">
+            <button className="homepage-buy-button">Buy now</button>
+          </Link>
+
           <h2>
             <span className="slogan1">"Because everything i</span>
             <span className="slogan2">s better in cube form"</span>
@@ -28,7 +32,9 @@ function Homepage() {
               In a market where the exceptional is never ordinary, deCube sets
               the standard.
             </p>
-            <button className="homepage-buy-button">Products</button>
+            <Link href="/productpage">
+              <button className="homepage-buy-button">Products</button>
+            </Link>
           </div>
         </div>
         <div className="sections">
