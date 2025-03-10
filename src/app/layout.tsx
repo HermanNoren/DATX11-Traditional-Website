@@ -8,7 +8,7 @@ import Navbar from "./components/navbar/navbar";
 import { CartProvider } from './components/cartlogic';
 import { usePathname } from 'next/navigation';
 
-const geistSans = Geist({
+/*const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
           {!isExcludedPage && <Navbar />}

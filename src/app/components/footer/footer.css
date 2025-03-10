@@ -15,7 +15,7 @@
   gap: 2rem;
   font-weight: 400;
   margin-right: 5rem;
-  color: rgb(15, 14, 14)
+  color: rgb(15, 14, 14);
 }
 
 .copyright {
@@ -25,8 +25,8 @@
   color: rgb(15, 14, 14);
 }
 
-.logo {
-  margin-left: 2rem;
+.decube-logo {
+  margin-left: 19rem;
 }
 
 .footer-info {
@@ -54,7 +54,7 @@
   text-align: center;
   flex: 1;
   padding: 0 15px;
-  color:rgb(15, 14, 14);
+  color: rgb(15, 14, 14);
 }
 
 .footer-button {

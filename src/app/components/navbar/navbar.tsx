@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./navbar.css";
-import { Boxes } from "lucide-react";
+import { Boxes, ShoppingCart } from "lucide-react";
 
 function Navbar() {
   return (
