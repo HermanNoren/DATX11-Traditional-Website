@@ -24,12 +24,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
   onQuantityChange,
 }) => {
   return (
-    <div className="product-card">
-      <img src={image} alt={`${name} Product`} className="product-image" />
-      <div className="card-text">
-        <div className="card-text-top">
-          <h1 className="card-title">{name}</h1>
-          <div className="card-quantity-amount">
+    <div className="productCard-card">
+      <img src={image} alt={`${name} Product`} className="productCard-image" />
+      <div className="productCard-text">
+        <div className="productCard-text-top">
+          <h1 className="productCard-title">{name}</h1>
+          <div className="productCard-quantity-amount">
             <select
               value={quantity}
               onChange={(e) => onQuantityChange(Number(e.target.value))}
@@ -41,15 +41,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
               ))}
             </select>
           </div>
-          <p className="card-price" data-price={formatPrice(price)}>
+          <p className="productCard-price" data-price={formatPrice(price)}>
             SEK
           </p>
         </div>
-        <div className="card-text-bottom">
-          <p className="card-dimensions">
+        <div className="productCard-text-bottom">
+          <p className="productCard-dimensions">
             <strong>Dimensions:</strong> {dimensions}
           </p>
-          <p className="card-remove" onClick={onRemove}>
+          <p className="productCard-remove" onClick={onRemove}>
             Remove
           </p>
         </div>

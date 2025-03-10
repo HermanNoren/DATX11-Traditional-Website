@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useCart } from '../components/cartlogic';
+import { useCart } from "../components/cartlogic";
 import "./products.css";
 
 interface Product {
@@ -14,34 +14,34 @@ interface Product {
 
 const PRODUCTS: Product[] = [
   {
-    id: 'petite',
-    name: 'PETITE',
+    id: "petite",
+    name: "PETITE",
     price: 4999,
-    dimensions: '10x10x10 cm',
-    image: '/petit.png'
+    dimensions: "10x10x10 cm",
+    image: "/petit.png",
   },
   {
-    id: 'regal',
-    name: 'REGAL',
+    id: "regal",
+    name: "REGAL",
     price: 7999,
-    dimensions: '20x20x20cm',
-    image: '/regal.png'
+    dimensions: "20x20x20cm",
+    image: "/regal.png",
   },
   {
-    id: 'imperial',
-    name: 'IMPERIAL',
+    id: "imperial",
+    name: "IMPERIAL",
     price: 9999,
-    dimensions: '30x30x30cm',
-    image: '/imperial.png'
-  }
+    dimensions: "30x30x30cm",
+    image: "/imperial.png",
+  },
 ];
 
 const ProductPage: React.FC = () => {
-  const { cartItems, addItem} = useCart();
+  const { cartItems, addItem } = useCart();
 
   return (
     <div className="product-page">
-      <div className="header"></div>
+      <div className="product-header"></div>
       <h1 className="products-title">- Products -</h1>
       <p className="product-text">
         Experience deCube — a revolutionary decorating cube crafted from
@@ -52,14 +52,14 @@ const ProductPage: React.FC = () => {
         sophistication.
       </p>
 
-      <div className="line"></div>
+      <div className="product-line"></div>
       <div className="product-grid">
         {/* PETITE */}
         <div className="product-card">
           <img src="/petit.png" alt="Petite Cube" className="product-image" />
           <div className="product-details">
             <h2 className="product-title">PETITE</h2>
-            <p className="description">
+            <p className="product-description">
               The Petit, a refined choice for those who value rarity in a
               compact <br />
               form. A favorite among collectors looking to own a rare piece of
@@ -68,16 +68,16 @@ const ProductPage: React.FC = () => {
               asset, <br />
               it carries the unmistakable presence of something beyond Earth.
             </p>
-            <p className="dimensions">
+            <p className="product-dimensions">
               <strong>Dimensions:</strong> 10x10x10 cm
             </p>
-            <p className="price">
+            <p className="product-price">
               <strong>Price:</strong>&nbsp;&nbsp;4999 SEK
             </p>
-            <button 
+            <button
               className="product-button"
-              onClick={() => addItem(PRODUCTS.find(p => p.id === 'petite')!)}
-              disabled={cartItems.some(item => item.id === 'petite')}
+              onClick={() => addItem(PRODUCTS.find((p) => p.id === "petite")!)}
+              disabled={cartItems.some((item) => item.id === "petite")}
             >
               Add PETITE
             </button>
@@ -89,7 +89,7 @@ const ProductPage: React.FC = () => {
           <img src="regal.png" alt="Regal Product" className="product-image" />
           <div className="product-details">
             <h2 className="product-title">REGAL</h2>
-            <p className="description">
+            <p className="product-description">
               The Regal, a perfect balance of rarity and prestige, the go-to
               choice <br />
               for industry leaders and forward-thinkers.Coveted yet attainable,
@@ -100,16 +100,16 @@ const ProductPage: React.FC = () => {
               <br />
               your hands, you hold more than metal—you hold progress.
             </p>
-            <p className="dimensions">
+            <p className="product-dimensions">
               <strong>Dimensions:</strong> 20x20x20cm
             </p>
-            <p className="price">
+            <p className="product-price">
               <strong>Price:</strong>&nbsp;&nbsp;7999 SEK
             </p>
-            <button 
+            <button
               className="product-button"
-              onClick={() => addItem(PRODUCTS.find(p => p.id === 'regal')!)}
-              disabled={cartItems.some(item => item.id === 'regal')}
+              onClick={() => addItem(PRODUCTS.find((p) => p.id === "regal")!)}
+              disabled={cartItems.some((item) => item.id === "regal")}
             >
               Add REGAL
             </button>
@@ -125,7 +125,7 @@ const ProductPage: React.FC = () => {
           />
           <div className="product-details">
             <h2 className="product-title">IMPERIAL</h2>
-            <p className="description">
+            <p className="product-description">
               The Imperial, the largest and boldest, A monolith of Astrolite,
               commanding <br />
               attention whether placed in a corporate headquarters, or private
@@ -134,23 +134,25 @@ const ProductPage: React.FC = () => {
               grander scale. <br />
               To own an Imperial is to stake a claim in the future itself.
             </p>
-            <p className="dimensions">
+            <p className="product-dimensions">
               <strong>Dimensions:</strong> 30x30x30cm
             </p>
-            <p className="price">
+            <p className="product-price">
               <strong>Price:</strong>&nbsp;&nbsp;9999 SEK
             </p>
-            <button 
+            <button
               className="product-button"
-              onClick={() => addItem(PRODUCTS.find(p => p.id === 'imperial')!)}
-              disabled={cartItems.some(item => item.id === 'imperial')}
+              onClick={() =>
+                addItem(PRODUCTS.find((p) => p.id === "imperial")!)
+              }
+              disabled={cartItems.some((item) => item.id === "imperial")}
             >
               Add IMPERIAL
             </button>
           </div>
         </div>
       </div>
-      <div className="margin">.</div>
+      <div className="product-margin">.</div>
     </div>
   );
 };

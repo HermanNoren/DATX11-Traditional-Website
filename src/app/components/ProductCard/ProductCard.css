@@ -1,4 +1,4 @@
-.product-grid {
+.productCard-grid {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -8,19 +8,19 @@
   padding: 0 20px;
 }
 
-.product-card {
+.productCard-card {
   margin: 0 auto;
   border: 1px solid #e2e2e2;
   border-radius: 10px;
   padding: 20px;
-  width: 90%;
+  width: 70%;
   display: flex;
   align-items: flex-start;
   gap: 10px;
   box-shadow: 5px 5px 15px rgba(51, 51, 51, 0.3);
 }
 
-.product-image {
+.productCard-image {
   margin-top: 10px;
   margin-left: 10px;
   width: 150px;
@@ -29,14 +29,14 @@
   border-radius: 10px;
 }
 
-.card-details {
+.productCard-details {
   display: flex;
   flex-direction: column;
   width: 100%;
   color: (40, 40, 40);
 }
 
-.card-text-bottom {
+.productCard-text-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@
   color: (40, 40, 40);
 }
 
-.card-title {
+.productCard-title {
   margin: 0;
   font-size: 31px;
   font-weight: normal;
@@ -56,18 +56,18 @@
   color: (40, 40, 40);
 }
 
-.card-description {
+.productCard-description {
   font-size: 20px;
   line-height: 1.5;
   color: #444;
   margin-top: 10px;
 }
 
-.card-dimensions {
+.productCard-dimensions {
   flex: 1;
 }
 
-.card-price {
+.productCard-price {
   width: 260px;
   font-size: 22px;
   color: (40, 40, 40);
@@ -77,7 +77,7 @@
   white-space: nowrap;
 }
 
-.card-price::before {
+.productCard-price::before {
   content: attr(data-price);
   display: inline-block;
   min-width: 80px;
@@ -85,7 +85,7 @@
   color: (40, 40, 40);
 }
 
-.card-remove {
+.productCard-remove {
   width: 80px;
   font-weight: bold;
   cursor: pointer;
@@ -94,14 +94,14 @@
   font-size: 16px;
   white-space: nowrap;
   margin-right: -150px;
-  color: (40, 40, 40);
+  color: rgb(192, 37, 50);
 }
 
-.card-margin {
+.productCard-margin {
   margin-top: 160px;
 }
 
-.card-text-top {
+.productCard-text-top {
   margin-top: 20px;
   margin-bottom: 22px;
   display: grid;
@@ -112,7 +112,7 @@
   color: (40, 40, 40);
 }
 
-.card-quantity-amount {
+.productCard-quantity-amount {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +121,7 @@
   width: 190px;
 }
 
-.card-quantity-amount select {
+.productCard-quantity-amount select {
   margin-right: -50px;
   padding: 5px;
   border: none;
@@ -137,7 +137,7 @@
   text-align: center;
 }
 
-.card-quantity-amount select:focus {
+.productCard-quantity-amount select:focus {
   outline: none;
   border: none;
 }

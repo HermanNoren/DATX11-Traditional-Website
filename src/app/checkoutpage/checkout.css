@@ -7,6 +7,7 @@
 }
 .checkout-page {
   background-color: rgb(255, 252, 249);
+  min-height: 49rem;
 }
 
 .back-icon {
@@ -23,6 +24,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(255, 252, 249);
 }
 
 .checkout-bag {
@@ -32,11 +34,10 @@ body {
 }
 
 .checkout-text {
-  font-weight: 300;
-  text-align: center;
-  margin-top: 2px;
   font-size: 1.5rem;
   color: rgb(40, 40, 40);
+  font-weight: 300;
+  text-align: center;
 }
 
 .checkout-line {
@@ -52,18 +53,26 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
+  border-color: #6f472a;
+  margin-top: 4rem;
 }
 
 .add-buttons button {
   padding: 8px 16px;
-  border: 1px solid #ffffff;
+  border: 1px solid #b5b2b2;
   cursor: pointer;
   color: rgb(35, 25, 25);
+  border-radius: 16px;
 }
 
 .add-buttons button:disabled {
-  background-color: #614531;
+  background-color: #cd9e7c;
   cursor: not-allowed;
+  border-radius: 16px;
+}
+
+.add-buttons button:hover {
+  border-color: #0c0b0b;
 }
 
 .checkout-header {
@@ -74,6 +83,14 @@ body {
   margin-bottom: 20px;
   width: 100%;
   margin-top: 50px;
+}
+
+.checkout-product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 100%;
+  align-items: center;
 }
 
 .checkout-button {
@@ -90,6 +107,8 @@ body {
   width: 220px;
   margin-bottom: 20px;
   font-weight: 50;
+  margin-top: 40px;
+  background-color: rgb(89, 54, 25);
 }
 
 .checkout-button:hover {
@@ -98,11 +117,11 @@ body {
 }
 
 .bottom-text {
-  font-size: 11px;
+  font-size: 14px;
   color: rgb(40, 40, 40);
   font-weight: 300;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 5rem;
 }
 
 .checkout-navbar-icons {
@@ -115,14 +134,12 @@ body {
   z-index: 1000;
 }
 
-.cart-icon-wrapper {
-  position: absolute;
-  right: 10px;
-}
-
-.cart-icon {
+.shoppingcart-icon {
   width: 40px;
   height: 40px;
+  color: rgb(14, 14, 14);
+  margin-top: 2px;
+  margin-left: 83rem;
 }
 
 .checkout-navbar {
@@ -131,25 +148,18 @@ body {
   left: 0;
   right: 0;
   padding: 20px;
-  background-color: #ffffff !important;
+  background-color: #ececec;
   z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
-  border-bottom: 2px solid #c2c2c2;
+  height: 5.2rem;
 }
 
 .checkout-navbar .back-arrow {
   position: absolute;
   top: 12px;
   left: 10px;
-}
-
-.checkout-navbar .cart-icon-wrapper {
-  position: absolute;
-  top: 15px;
-  right: 10px;
 }
 
 .checkout-navbar .top-text {

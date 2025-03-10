@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ body {
   background-color: rgb(255, 252, 249);
 }
 
-.header {
+.product-header {
   width: 100%;
   height: 12rem;
   background: url("/aboutpageHeader.png") no-repeat center center/cover;
@@ -34,12 +33,12 @@ body {
   margin-bottom: 100px;
 }
 
-.line {
-  width: 40%;
+.product-line {
+  width: 88%;
   height: 3px;
   background-color: #aaaaaa;
+  margin-left: 6%;
   margin-top: -30px;
-  margin-left: 30%;
   margin-bottom: 70px;
 }
 
@@ -50,6 +49,7 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 0px;
+  align-items: center;
 }
 
 .product-card {
@@ -60,15 +60,15 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-bottom: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(51, 51, 51, 0.3);
+  width: 90%;
 }
 
 .product-image {
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 300px;
+  margin-top: 7px;
+  margin-left: 7px;
+  width: 270px;
   height: auto;
   margin-right: 20px;
   border-radius: 10px;
@@ -87,44 +87,45 @@ body {
   color: #333;
 }
 
-.description {
+.product-description {
   font-size: 20px;
   line-height: 1.5;
   color: #444;
   margin-top: 10px;
 }
 
-.dimensions {
+.product-dimensions {
   margin-top: 10px;
   font-size: 20px;
   color: #000;
 }
 
-.price {
+.product-price {
   margin-top: 10px;
   font-size: 20px;
   color: #000;
 }
 
 .product-button {
-  margin-left: 650px;
+  width: 15rem;
+  margin-left: 520px;
   margin-top: 0px;
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
-  background-color: rgb(89, 54, 25);
   border: none;
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  background-color: rgb(89, 54, 25);
+  color: white;
 }
 
 .product-button:hover {
-  background-color: rgb(50, 50, 50);
+  background: #6f472a;
 }
 
-.margin {
+.product-margin {
   margin-top: 160px;
   background-color: rgb(255, 252, 249);
 }
