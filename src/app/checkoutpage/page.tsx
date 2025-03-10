@@ -100,7 +100,7 @@ const CheckoutPage: React.FC = () => {
         </div>
         <div className="margin"></div>
         <div className="checkout-footer">
-        <Link href="/confirmationpage">
+        <Link href="/lastpages">
           <button className="checkout-button">CHECKOUT</button>
         </Link>
           <p className="bottom-text">
