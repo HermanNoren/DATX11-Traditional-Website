@@ -16,7 +16,7 @@ import { usePathname } from 'next/navigation';
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+});*/
 
 export default function RootLayout({
   children,
