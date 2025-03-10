@@ -11,9 +11,13 @@ function Navbar() {
       <div className={"navLinks"}>
         <Link href="/productpage">Products</Link>
         <Link href="/aboutpage">About Us</Link>
-        <Link href="/contactpage">Contact</Link>
-        <Link href="/cartpage" className="cart-logo">
-          <ShoppingCart strokeWidth={2} className="cart-logo-icon" />
+        <Link href="#">Contacts</Link>
+        <Link href="/checkoutpage" className="cart-link">
+          <img 
+            src="/shopping-cart.png" 
+            alt="Cart" 
+            className="cart-icon" 
+          />
         </Link>
       </div>
     </nav>

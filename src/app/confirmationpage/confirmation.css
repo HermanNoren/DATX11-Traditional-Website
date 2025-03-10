@@ -1,0 +1,110 @@
+.checkout-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-bottom: 2px solid #c2c2c2;
+}
+  
+.checkout-navbar .back-arrow {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.checkout-navbar .top-text {
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back-icon {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.2s ease;
+  }
+
+.back-icon:hover {
+  transform: scale(1.2);
+}
+
+.confirmation-cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;  
+  height: 200px; 
+}
+
+.body {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.h3 {
+  font-size: 900px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.confirmation-page {
+  min-height: 100vh;
+  position: relative;
+}
+
+.text {
+  font-size: 88px;
+  margin: -20;
+  font-weight: 400;
+}
+
+.instruction-text {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -220px; 
+}
+
+.button {
+  background-color: #74504d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 200px;
+}
+
+.button:hover {
+  background-color: #6f472a;
+}
