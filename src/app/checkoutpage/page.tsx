@@ -2,9 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { useCart } from '../components/cartlogic';
+import { useCart } from "../components/cartlogic";
 import "./checkout.css";
 import ProductCard from "../components/ProductCard/ProductCard";
+import { ShoppingCart } from "lucide-react";
 
 interface Product {
   id: string;
@@ -20,26 +21,26 @@ interface CartItem extends Product {
 
 const PRODUCTS: Product[] = [
   {
-    id: 'petite',
-    name: 'PETITE',
+    id: "petite",
+    name: "PETITE",
     price: 4999,
-    dimensions: '10x10x10 cm',
-    image: '/petit.png'
+    dimensions: "10x10x10 cm",
+    image: "/petit.png",
   },
   {
-    id: 'regal',
-    name: 'REGAL',
+    id: "regal",
+    name: "REGAL",
     price: 7999,
-    dimensions: '20x20x20cm',
-    image: '/regal.png'
+    dimensions: "20x20x20cm",
+    image: "/regal.png",
   },
   {
-    id: 'imperial',
-    name: 'IMPERIAL',
+    id: "imperial",
+    name: "IMPERIAL",
     price: 9999,
-    dimensions: '30x30x30cm',
-    image: '/imperial.png'
-  }
+    dimensions: "30x30x30cm",
+    image: "/imperial.png",
+  },
 ];
 
 const formatPrice = (price: number) => {
@@ -47,8 +48,16 @@ const formatPrice = (price: number) => {
 };
 
 const CheckoutPage: React.FC = () => {
-  const { cartItems, addItem: addToCart, removeItem: removeFromCart, Quantity: updateQuantity } = useCart();
-  const totalPrice = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const {
+    cartItems,
+    addItem: addToCart,
+    removeItem: removeFromCart,
+    Quantity: updateQuantity,
+  } = useCart();
+  const totalPrice = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
 
   return (
     <div className="checkout-page">
@@ -59,33 +68,35 @@ const CheckoutPage: React.FC = () => {
         <Link href="/homepage" className="top-text-link">
           <h2 className="top-text">deCube Shopping Bag</h2>
         </Link>
-        <div className="cart-icon-wrapper">
-          <img src="/shopping-cart.png" alt="Shopping Cart" className="cart-icon" />
-        </div>
+        <Link href="/checkoutpage" className="cart-link">
+          <ShoppingCart
+            strokeWidth={2}
+            className="shoppingcart-icon"
+          ></ShoppingCart>
+        </Link>
       </div>
       <div className="shopping-cart">
         <div className="checkout-header">
-          <h2 className="bag">
+          <h2 className="checkout-bag">
             Bag total: {formatPrice(totalPrice)} SEK
           </h2>
-          <div className="add-buttons">
-            {PRODUCTS.map(product => (
-              <button 
-                key={product.id}
-                onClick={() => addToCart(product)}
-                disabled={cartItems.some(item => item.id === product.id)}
-              >
-                Add {product.name}
-              </button>
-            ))}
-          </div>
         </div>
-        <p className="text">
-          Worldwide shipping and no returns.
-        </p>
-        <div className="line"></div>
-        <div className="product-grid">
-          {cartItems.map(item => (
+        <p className="checkout-text">Worldwide shipping and no returns</p>
+
+        <div className="add-buttons">
+          {PRODUCTS.map((product) => (
+            <button
+              key={product.id}
+              onClick={() => addToCart(product)}
+              disabled={cartItems.some((item) => item.id === product.id)}
+            >
+              ADD {product.name}
+            </button>
+          ))}
+        </div>
+        <div className="checkout-line"></div>
+        <div className="checkout-product-grid">
+          {cartItems.map((item) => (
             <ProductCard
               key={item.id}
               name={item.name}
@@ -100,16 +111,17 @@ const CheckoutPage: React.FC = () => {
         </div>
         <div className="margin"></div>
         <div className="checkout-footer">
-        <Link href="/confirmationpage">
-          <button className="checkout-button">CHECKOUT</button>
-        </Link>
+          <Link href="/lastpage">
+            <button className="checkout-button">CHECKOUT</button>
+          </Link>
           <p className="bottom-text">
-            DISCLAIMER: this isn't a real checkout. pressing the 
-            <br />button brings you to the end of the site 
+            DISCLAIMER: this isn't a real checkout. pressing the
+            <br />
+            button brings you to the end of the site
           </p>
         </div>
       </div>
-    </div>  
+    </div>
   );
 };
 
