@@ -5,8 +5,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/navbar";
-import { CartProvider } from './components/cartlogic';
-import { usePathname } from 'next/navigation';
+import { CartProvider } from "./components/cartlogic";
+import { usePathname } from "next/navigation";
 
 /*const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-  const isExcludedPage = pathname === '/checkoutpage' || pathname === '/confirmationpage';
+  const isExcludedPage =
+    pathname === "/checkoutpage" || pathname === "/lastpage";
 
   return (
     <html lang="en">
       <body
-        //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
           {!isExcludedPage && <Navbar />}
