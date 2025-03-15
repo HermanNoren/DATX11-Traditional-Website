@@ -101,6 +101,6 @@
 .contactimage {
   display: block; /* Makes sure margin auto works */
   margin: 7px auto 0; /* Centers horizontally */
-  width: 270px;
+  width: 500px;
   height: auto;
 }

@@ -12,7 +12,7 @@ function Contactpage() {
         <strong>Phone:</strong>  +46 123 456 789<br></br>
         <strong>Email:</strong>  deCube@deCube.com
       </p>
-      <h1 className="contact-text"><strong>FAQ</strong>
+      <h1 className="contact-text mb-0"><strong>FAQ</strong>
 
         <div className="containerA">
           <p className="FAQ-text-L"><strong>Q: How long does shipping take?</strong><br></br>A: Standard shipping takes 5-10 business days, while express shipping is available in 2-4 business days.
@@ -32,9 +32,9 @@ function Contactpage() {
       </h1>
 
       <h1 className="contact-text"><strong>Any other questions?</strong>
-        <p className="smalltext-C">Please contact us!</p>
-        <img src="2cube.png" alt="" className="contactimage" />
-        <p className="contact-text"><strong>Adress:</strong>deCube street,  Gothenburg Sweden<br></br>
+        <p className="smalltext-C mb-5">Please contact us!</p>
+        <img src="2cube.png" alt="" className="contactimage mb-5" />
+        <p className="contact-text"><strong>Adress:</strong> deCube street,  Gothenburg Sweden<br></br>
         <strong>Socials: </strong>  facebook, linkedin, instagram</p></h1>
 
 
