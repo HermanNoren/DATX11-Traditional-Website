@@ -15,7 +15,7 @@ function Footer() {
         <div className="info-column">
           <p>About deCube</p>
           <Link href="/aboutpage">
-            <button className="footer-button">About Us</button>
+            <button className="footer-button">About</button>
           </Link>
         </div>
         <div className="info-column">
