@@ -66,7 +66,7 @@
   display: block; /* Ensures the text appears immediately below the label */
   margin-top: 2px; /* Slight spacing */
   text-align: left; 
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: rgb(40, 40, 40);
 }
 
@@ -74,7 +74,7 @@
   display: block; /* Ensures the text appears immediately below the label */
   margin-top: 2px; /* Slight spacing */
   text-align: right; 
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: rgb(40, 40, 40);
 }
 

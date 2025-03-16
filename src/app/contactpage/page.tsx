@@ -12,7 +12,7 @@ function Contactpage() {
         <strong>Phone:</strong>  +46 123 456 789<br></br>
         <strong>Email:</strong>  deCube@deCube.com
       </p>
-      <h1 className="contact-text mb-0"><strong>FAQ</strong>
+      <h1 className="contact-text"><strong>FAQ</strong>
 
         <div className="containerA">
           <p className="FAQ-text-L"><strong>Q: How long does shipping take?</strong><br></br>A: Standard shipping takes 5-10 business days, while express shipping is available in 2-4 business days.
