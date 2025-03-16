@@ -40,18 +40,34 @@ body {
 }
 
 .deCube-button {
-  margin-top: 2rem;
-  padding: 0.8rem 3rem;
-  font-size: 1.2rem;
-  font-weight: bold;
+  display: flex;
+  background: #8b5e3c;
   color: white;
-  background-color: rgb(89, 54, 25);
   border: none;
+  padding: 6px;
   border-radius: 15px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  width: 220px;
+  margin-bottom: 20px;
+  font-weight: 50;
+  margin-top: 40px;
+  background-color: rgb(89, 54, 25);
 }
 
 .deCube-button:hover {
   background-color: rgb(125, 83, 55);
+}
+
+.decube-logo-end {
+  display: flex; /* Ensure flexbox is applied */
+  align-items: center;  /* Vertically center the content */
+  justify-content: center;  
+}
+
+.decube-logo-end svg {
+  width: 200px; /* Icon size - adjust as needed */
+  height: auto; /* Icon size - adjust as needed */
 }
