@@ -47,8 +47,9 @@ body {
   flex-direction: column;
   gap: 25px;
   max-width: 1300px;
+  height: auto;
   margin: 0 auto;
-  padding: 0 0px;
+  padding: auto;
   align-items: center;
 }
 
@@ -108,7 +109,7 @@ body {
 .product-button {
   width: 15rem;
   margin-left: 520px;
-  margin-top: 0px;
+  margin-top: -50px;
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
   border: none;
@@ -127,3 +128,4 @@ body {
   margin-top: 160px;
   background-color: rgb(255, 252, 249);
 }
+

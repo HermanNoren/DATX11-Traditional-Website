@@ -55,7 +55,7 @@ const ProductPage: React.FC = () => {
       <div className="product-grid">
         {/* PETITE */}
         <div className="product-card">
-          <img src="/petit.png" alt="Petite Cube" className="product-image mb-4" />
+          <img src="/petit.png" alt="Petite Cube" className="product-image" />
           <div className="product-details">
             <h2 className="product-title">PETITE</h2>
             <p className="product-description">
@@ -85,7 +85,7 @@ const ProductPage: React.FC = () => {
 
         {/* REGAL */}
         <div className="product-card">
-          <img src="regal.png" alt="Regal Product" className="product-image mb-4" />
+          <img src="regal.png" alt="Regal Product" className="product-image" />
           <div className="product-details">
             <h2 className="product-title">REGAL</h2>
             <p className="product-description">
@@ -120,7 +120,7 @@ const ProductPage: React.FC = () => {
           <img
             src="imperial.png"
             alt="Imperial Product"
-            className="product-image mb-4"
+            className="product-image mb-5"
           />
           <div className="product-details">
             <h2 className="product-title">IMPERIAL</h2>
