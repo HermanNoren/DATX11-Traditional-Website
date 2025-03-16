@@ -69,6 +69,7 @@ function Homepage() {
             </p>
           </div>
         </div>
+        <div className="margin">.</div>
       </div>
     </>
   );

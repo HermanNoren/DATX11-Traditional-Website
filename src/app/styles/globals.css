@@ -41,3 +41,8 @@ body {
   background: var(--background);
   font-family: "Red Hat Display", serif;
 }
+
+.margin {
+  margin-top: 160px;
+  background-color: rgb(255, 252, 249);
+}
