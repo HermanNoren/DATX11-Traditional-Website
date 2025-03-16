@@ -42,7 +42,7 @@ const ProductPage: React.FC = () => {
   return (
     <div className="product-page">
       <div className="product-header"></div>
-      <h1 className="products-title">- Products -</h1>
+      <h1 className="products-title mb-5">- Products -</h1>
       <p className="product-text">
         Experience deCube — a revolutionary decorating cube crafted from
         Astrolite, an exclusive <br />
@@ -60,7 +60,7 @@ const ProductPage: React.FC = () => {
           <div className="product-details">
             <h2 className="product-title">PETITE</h2>
             <p className="product-description">
-              The Petit, a refined choice for those who value rarity in a
+              The Petite, a refined choice for those who value rarity in a
               compact <br />
               form. A favorite among collectors looking to own a rare piece of
               the <br />
@@ -79,7 +79,7 @@ const ProductPage: React.FC = () => {
               onClick={() => addItem(PRODUCTS.find((p) => p.id === "petite")!)}
               disabled={cartItems.some((item) => item.id === "petite")}
             >
-              Add PETITE
+              ADD TO CART
             </button>
           </div>
         </div>
@@ -92,7 +92,7 @@ const ProductPage: React.FC = () => {
             <p className="product-description">
               The Regal, a perfect balance of rarity and prestige, the go-to
               choice <br />
-              for industry leaders and forward-thinkers.Coveted yet attainable,
+              for industry leaders and forward-thinkers. Coveted yet attainable,
               it's
               <br />
               the cube that moves industries and closes deals. When a Regal is
@@ -111,7 +111,7 @@ const ProductPage: React.FC = () => {
               onClick={() => addItem(PRODUCTS.find((p) => p.id === "regal")!)}
               disabled={cartItems.some((item) => item.id === "regal")}
             >
-              Add REGAL
+              ADD TO CART
             </button>
           </div>
         </div>
@@ -126,7 +126,7 @@ const ProductPage: React.FC = () => {
           <div className="product-details">
             <h2 className="product-title">IMPERIAL</h2>
             <p className="product-description">
-              The Imperial, the largest and boldest, A monolith of Astrolite,
+              The Imperial, the largest and boldest, a monolith of Astrolite,
               commanding <br />
               attention whether placed in a corporate headquarters, or private
               collection. <br />
@@ -147,7 +147,7 @@ const ProductPage: React.FC = () => {
               }
               disabled={cartItems.some((item) => item.id === "imperial")}
             >
-              Add IMPERIAL
+              ADD TO CART
             </button>
           </div>
         </div>
