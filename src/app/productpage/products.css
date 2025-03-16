@@ -111,17 +111,16 @@ body {
   margin-top: 0px;
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
-  font-weight: bold;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-  background-color: rgb(125, 83, 55);
-  color: white;
+  background-color: #cd9e7c;
+  color: black;
 }
 
 .product-button:hover {
-  background: #6f472a;
+  background: #ebb58f;
 }
 
 .product-margin {
