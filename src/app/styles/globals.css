@@ -27,6 +27,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --button-color: #936a41;
+  --button-hover-color: #a58a6f;
+  --AddButton-color: #cd9e7c;
 }
 
 @media (prefers-color-scheme: dark) {
