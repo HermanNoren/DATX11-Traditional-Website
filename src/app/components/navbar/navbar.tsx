@@ -10,7 +10,7 @@ function Navbar() {
       </Link>
       <div className={"navLinks"}>
         <Link href="/productpage">Products</Link>
-        <Link href="/aboutpage">About Us</Link>
+        <Link href="/aboutpage">About</Link>
         <Link href="/contactpage">Contacts</Link>
         <Link href="/checkoutpage" className="cart-link">
           <ShoppingCart strokeWidth={2} className="cart-icon"></ShoppingCart>
