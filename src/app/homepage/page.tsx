@@ -6,18 +6,17 @@ function Homepage() {
     <>
       <div className="homepage">
         <div className="start">
-          <h1>
+          <h1 className="brand-home">
             <span className="deC">deC</span>
             <span className="ube">ube</span>
           </h1>
-          <Link href="/productpage">
-            <button className="homepage-buy-button">Buy now</button>
-          </Link>
-
-          <h2>
+          <h2 className="slogan">
             <span className="slogan1">"Because everything i</span>
             <span className="slogan2">s better in cube form"</span>
           </h2>
+          <Link href="/productpage">
+            <button className="homepage-buy-button">Buy now</button>
+          </Link>
         </div>
         <div className="sections">
           <img src="/Chair.png" alt="double logo" className="chair-image" />
@@ -33,7 +32,7 @@ function Homepage() {
               the standard.
             </p>
             <Link href="/productpage">
-              <button className="homepage-buy-button">Products</button>
+              <button className="homepage-section-button">Products</button>
             </Link>
           </div>
         </div>
@@ -69,6 +68,7 @@ function Homepage() {
             </p>
           </div>
         </div>
+        <div className="homepage-margin">.</div>
       </div>
     </>
   );
