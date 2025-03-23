@@ -69,6 +69,7 @@ function Aboutpage() {
           />
         </div>
       </div>
+      <div className="margin">.</div>
     </div>
   );
 }

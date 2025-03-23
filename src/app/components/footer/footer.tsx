@@ -5,24 +5,25 @@ import { Facebook, Instagram, Linkedin, Boxes } from "lucide-react";
 function Footer() {
   return (
     <footer className="footer-container">
-      <div className="footer-info">
-        <div className="info-column">
-          <p>View products</p>
-          <Link href="/productpage">
-            <button className="footer-button">Products</button>
-          </Link>
-        </div>
-        <div className="info-column">
-          <p>About deCube</p>
-          <Link href="/aboutpage">
-            <button className="footer-button">About Us</button>
-          </Link>
-        </div>
-        <div className="info-column">
-          <p>Contact us</p>
-          <Link href="/contactpage">
-            <button className="footer-button">Contact</button>
-          </Link>
+      <div className="footer-box">
+        <p className="info-text">Explore more of our website here.</p>
+        <div className="footer-line"></div>
+        <div className="footer-info">
+          <div className="info-column">
+            <Link href="/productpage">
+              <button className="footer-button">Products</button>
+            </Link>
+          </div>
+          <div className="info-column">
+            <Link href="/aboutpage">
+              <button className="footer-button">About</button>
+            </Link>
+          </div>
+          <div className="info-column">
+            <Link href="/contactpage">
+              <button className="footer-button">Contact</button>
+            </Link>
+          </div>
         </div>
       </div>
 
