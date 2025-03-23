@@ -152,7 +152,7 @@ const ProductPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="product-margin">.</div>
+      <div className="margin">.</div>
     </div>
   );
 };
