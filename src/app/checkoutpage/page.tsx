@@ -121,6 +121,7 @@ const CheckoutPage: React.FC = () => {
           </p>
         </div>
       </div>
+      <div className="margin">.</div>
     </div>
   );
 };
