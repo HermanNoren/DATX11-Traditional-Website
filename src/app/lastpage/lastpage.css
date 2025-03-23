@@ -4,31 +4,13 @@ body {
   color: #333;
   background-color: rgb(255, 252, 249);
 }
-.last-page {
-  background-color: rgb(255, 252, 249);
-  align-items: center;
-}
 
-.last-header {
-  width: 100%;
-  height: 5.2rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  text-align: center;
-  box-shadow: 0px 2px 4px rgb(162, 162, 162);
-  background-color: #ececec;
-  margin-top: 0px;
-}
+
 .thanks-container {
   align-items: center;
   text-align: center;
 }
-.cube-image {
-  width: 120px;
-  height: auto;
-  margin-left: 45.5%;
-  margin-top: 5rem;
-}
+
 .thank-you {
   font-size: 3rem;
   margin-top: 2rem;
@@ -62,12 +44,12 @@ body {
 }
 
 .decube-logo-end {
-  display: flex; /* Ensure flexbox is applied */
-  align-items: center;  /* Vertically center the content */
+  display: flex; 
+  align-items: center;  
   justify-content: center;  
 }
 
 .decube-logo-end svg {
-  width: 200px; /* Icon size - adjust as needed */
-  height: auto; /* Icon size - adjust as needed */
+  width: 200px; 
+  height: auto; 
 }
