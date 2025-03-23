@@ -52,8 +52,9 @@ const CheckoutPage: React.FC = () => {
     cartItems,
     addItem: addToCart,
     removeItem: removeFromCart,
-    Quantity: updateQuantity,
+    updateQuantity, 
   } = useCart();
+  
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
@@ -105,7 +106,7 @@ const CheckoutPage: React.FC = () => {
               image={item.image}
               quantity={item.quantity}
               onRemove={() => removeFromCart(item.id)}
-              onQuantityChange={(quantity) => updateQuantity(item.id, quantity)}
+              onQuantityChange={(quantity) => updateQuantity(item.id, quantity)} 
             />
           ))}
         </div>
