@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 252, 249);
+  display: grid;
 }
 
 .header {
@@ -46,12 +47,12 @@
   height: 50px;
   text-orientation: sideways;
   white-space: nowrap;
-  margin-left: 18rem;
-  margin-top: 16rem;
+  margin-left: 15rem;
+  margin-top: 10rem;
 }
 
 .containerSubtitleInternalShapes {
-  margin-left: 10px;
+  margin-left: 3px;
 }
 
 .text {
@@ -88,27 +89,26 @@
   width: 800;
   height: auto;
   margin-top: 4rem;
-  margin-left: 2%;
+  margin-left: 8%;
   text-align: center;
   border-color: aquamarine;
 }
 
 .astrolight {
-  width: 900px;
   margin-top: 3rem;
-  margin-left: 5rem;
+  margin-left: 8rem;
   height: 20rem;
   text-align: center;
   flex: 1;
 }
 
 .buy-button {
-  margin-top: 1rem;
+  margin-top: 4rem;
   padding: 0.8rem 3rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background-color: rgb(89, 54, 25);
+  background-color: var(--button-color);
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -116,16 +116,16 @@
 }
 
 .buy-button:hover {
-  background: #6f472a;
+  background: var(--button-hover-color);
 }
 
 /* bilder */
 .astrolight-image {
   width: 30rem;
   height: auto;
-  margin-left: 4rem;
+  margin-left: 0rem;
   margin-right: 4rem;
-  margin-top: 10px;
+  margin-top: 3.5rem;
 }
 
 .chair-image {
