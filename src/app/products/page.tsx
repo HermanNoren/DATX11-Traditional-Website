@@ -42,7 +42,7 @@ const ProductPage: React.FC = () => {
   return (
     <div className="product-page">
       <div className="product-header"></div>
-      <h1 className="products-title mb-5">- Products -</h1>
+      <h1 className="products-title">- Products -</h1>
       <p className="product-text">
         Experience deCube — a revolutionary decorating cube crafted from
         Astrolite, an exclusive <br />
