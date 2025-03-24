@@ -38,7 +38,7 @@ function Aboutpage() {
               We offer worldwide shipping, with no returns, reflecting the
               uncompromising quality and rarity of our product.
             </p>
-            <Link href="/productpage">
+            <Link href="/products">
               <button className="buy-button">Buy now</button>
             </Link>
           </div>
