@@ -1,11 +1,12 @@
 .navbar {
+  position: sticky;
+  top: 0;
   background-color: #ececec;
   padding: 1rem 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  position: sticky;
 }
 
 .logo {
