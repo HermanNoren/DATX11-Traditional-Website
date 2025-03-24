@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
-import Footer from "./components/footer/footer";
-import Navbar from "./components/navbar/navbar";
 import { CartProvider } from "./components/cartlogic";
 import ExcludedPathsProvider from "./components/ExcludedPathsProvider";
-
-/*const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});*/
 
 export const metadata: Metadata = {
   title: "deCube",
@@ -28,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`antialiased`}>
         <CartProvider>
           <ExcludedPathsProvider>{children}</ExcludedPathsProvider>
         </CartProvider>
