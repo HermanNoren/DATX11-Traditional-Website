@@ -9,7 +9,7 @@ export default function ExcludedPathsProvider(props: {
 }) {
   const pathname = usePathname();
   const isExcludedPage =
-    pathname === "/checkoutpage" || pathname === "/lastpage";
+    pathname === "/checkout" || pathname === "/lastpage";
   return (
     <>
       {!isExcludedPage && <Navbar />}
