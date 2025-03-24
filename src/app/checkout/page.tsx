@@ -52,9 +52,9 @@ const CheckoutPage: React.FC = () => {
     cartItems,
     addItem: addToCart,
     removeItem: removeFromCart,
-    updateQuantity, 
+    updateQuantity,
   } = useCart();
-  
+
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
@@ -63,13 +63,13 @@ const CheckoutPage: React.FC = () => {
   return (
     <div className="checkout-page">
       <div className="checkout-navbar">
-        <Link href="/productpage" className="back-arrow">
+        <Link href="/products" className="back-arrow">
           <img src="/back-arrow.png" alt="Back" className="back-icon" />
         </Link>
-        <Link href="/homepage" className="top-text-link">
+        <Link href="/home" className="top-text-link">
           <h2 className="top-text">deCube Shopping Bag</h2>
         </Link>
-        <Link href="/checkoutpage" className="cart-link">
+        <Link href="/checkout" className="cart-link">
           <ShoppingCart
             strokeWidth={2}
             className="shoppingcart-icon"
@@ -106,7 +106,7 @@ const CheckoutPage: React.FC = () => {
               image={item.image}
               quantity={item.quantity}
               onRemove={() => removeFromCart(item.id)}
-              onQuantityChange={(quantity) => updateQuantity(item.id, quantity)} 
+              onQuantityChange={(quantity) => updateQuantity(item.id, quantity)}
             />
           ))}
         </div>

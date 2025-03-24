@@ -14,7 +14,7 @@ function Homepage() {
             <span className="slogan1">"Because everything i</span>
             <span className="slogan2">s better in cube form"</span>
           </h2>
-          <Link href="/productpage">
+          <Link href="/products">
             <button className="homepage-buy-button">Buy now</button>
           </Link>
         </div>
@@ -31,7 +31,7 @@ function Homepage() {
               In a market where the exceptional is never ordinary, deCube sets
               the standard.
             </p>
-            <Link href="/productpage">
+            <Link href="/products">
               <button className="homepage-section-button">Products</button>
             </Link>
           </div>

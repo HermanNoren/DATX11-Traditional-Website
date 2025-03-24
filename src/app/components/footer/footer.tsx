@@ -10,17 +10,17 @@ function Footer() {
         <div className="footer-line"></div>
         <div className="footer-info">
           <div className="info-column">
-            <Link href="/productpage">
+            <Link href="/products">
               <button className="footer-button">Products</button>
             </Link>
           </div>
           <div className="info-column">
-            <Link href="/aboutpage">
+            <Link href="/about">
               <button className="footer-button">About</button>
             </Link>
           </div>
           <div className="info-column">
-            <Link href="/contactpage">
+            <Link href="/contacts">
               <button className="footer-button">Contact</button>
             </Link>
           </div>
@@ -30,7 +30,7 @@ function Footer() {
       <nav className="footer">
         <p className="copyright"> © deCube</p>
         <div className="decube-logo">
-          <Link href="/homepage" className="logo">
+          <Link href="/home" className="logo">
             <Boxes strokeWidth={1} className="logo-icon" />
           </Link>
         </div>
