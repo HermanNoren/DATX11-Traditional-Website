@@ -1,8 +1,11 @@
 import Link from "next/link";
 import "./navbar.css";
 import { Boxes, ShoppingCart } from "lucide-react";
+import { useCart } from "../cartlogic"; 
 
 function Navbar() {
+  const { cartCount } = useCart(); 
+
   return (
     <nav className={"navbar"}>
       <Link href="/homepage" className="logo">
@@ -13,7 +16,10 @@ function Navbar() {
         <Link href="/aboutpage">About</Link>
         <Link href="/contactpage">Contacts</Link>
         <Link href="/checkoutpage" className="cart-link">
-          <ShoppingCart strokeWidth={2} className="cart-icon"></ShoppingCart>
+          <div className="cart-container">
+            <ShoppingCart strokeWidth={2} className="cart-icon" />
+            {cartCount > 0 && <span className="cart-counter">{cartCount}</span>}
+          </div>
         </Link>
       </div>
     </nav>

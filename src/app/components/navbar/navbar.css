@@ -48,3 +48,27 @@
   display: flex;
   align-items: center;
 }
+
+.cart-container {
+  position: relative; 
+}
+
+.cart-counter {
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  background-color: #ebb58f; 
+  color: rgb(0, 0, 0); 
+  font-size: 12px; 
+  font-weight: bold; 
+  border-radius: 50%; 
+  padding: 3px 6px; 
+  min-width: 18px; 
+  height: 18px; 
+  text-align: center; 
+  line-height: 18px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  transform: translate(5px, -5px); 
+}
