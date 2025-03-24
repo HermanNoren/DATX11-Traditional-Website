@@ -105,7 +105,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background-color: var(--button-color);
+  background-color: #ddb396;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -113,7 +113,7 @@ body {
 }
 
 .checkout-button:hover {
-  background: var(--button-hover-color);
+  background: #f2ceb4;
   transition: background-color 0.2s ease;
 }
 
