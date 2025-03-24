@@ -4,7 +4,7 @@ import {Boxes } from "lucide-react";
 
 function LastPage() {
   return (
-    <div className="last-page mt-12">
+    <div className="last-page mt-25">
       <div className="thanks-container">
 
         <div className="decube-logo-end">
